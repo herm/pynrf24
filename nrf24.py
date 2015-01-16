@@ -759,7 +759,6 @@ class NRF24:
             pass
         elif length == NRF24.CRC_8:
             config |= _BV(NRF24.CRC_ENABLED)
-            config |= _BV(NRF24.CRC_8)
         else:
             config |= _BV(NRF24.CRC_ENABLED)
             config |= _BV(NRF24.CRC_16)
